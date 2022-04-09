@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Library</title>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <h1>LIBRARY BOOKS</h1><br>
+      <p> Welcome to Omachi Book Library. Please click on the button below to add your book to our collections </p>
+      <button type="button" id="addBooksBtn">ADD BOOKS TO THIS LIBRARY</button
+      ><br /><br />
+
+      <form action="" id="toggle" class="hideForm">
+        <div class="row">
+          <div class="col">
+            <label for="bookTitle">Book Title</label>
+            <input type="text" name="bookTitle" id="bookTitle" />
+            <small id="fNameError"></small>
+          </div>
+          <div class="col">
+            <label for="bookAuth">Book Author</label>
+            <input type="text" name="bookAuth" id="bookAuth" />
+            <small id="bookAuthError"></small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="bookPage">Book Pages</label>
+            <input type="number" name="bookPage" id="bookPage" />
+            <small id="bookPageError"></small>
+          </div>
+
+          <div class="col">
+            <label for="readStatus">Read Status(Read/Unread)</label>
+            <input type="text" name="readStatus" id="readStatus" />
+            <small id="readStatusError"></small>
+            
+          </div>
+
+          
+        </div>
+
+        <button type="button" id="regBtn">ADD BOOK</button><br /><br />     
+    </form>
+    <form  class="hideTable">
+        <table >
+        <thead >
+          <tr>
+            <th>S/N</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Status(Read/Unread)</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </form>
+      
+      </table>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
